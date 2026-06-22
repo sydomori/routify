@@ -37,9 +37,9 @@ function AppBar(){
                     </Typography>
                 </Box>
                 {/* Navigation Tabs */}
-                <Tabs>
-                    <Tab></Tab>
-                    <Tab></Tab>
+                <Tabs value={currentTab} onChange={handleTabChange} textColor="inherit" TabIndicatorProps={{style: {backgroundColor: '#fff'}}}>
+                    <Tab label="Dashboard" sx={{color: '#fff',textTransform:'none'}}></Tab>
+                    <Tab label="Analytics" sx={{color: '#aaa',textTransform:'none'}}></Tab>
                 </Tabs>
                 {/* Search Bar */}
                 <Box>
