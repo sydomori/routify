@@ -25,4 +25,37 @@ function AppBar(){
             navigate('/analytics')
         }
     }
+
+    return (
+        <MuiAppBar>
+            <Toolbar>
+                {/* Logo */}
+                <Box>
+                    <LocalShippingIcon />
+                    <Typography></Typography>
+                </Box>
+                {/* Navigation Tabs */}
+                <Tabs>
+                    <Tab></Tab>
+                    <Tab></Tab>
+                </Tabs>
+                {/* Search Bar */}
+                <Box>
+                    <SearchIcon />
+                    <InputBase />
+                </Box>
+                {/* Right Icons */}
+                <Box>
+                    <IconButton>
+                        <FilterListIcon />
+                    </IconButton>
+                    <IconButton>
+                        <Avatar>
+                            Syd
+                        </Avatar>
+                    </IconButton>
+                </Box>
+            </Toolbar>
+        </MuiAppBar>
+    )
 }
