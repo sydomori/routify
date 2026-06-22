@@ -28,7 +28,7 @@ function AppBar(){
 
     return (
         <MuiAppBar position="fixed" sx={{backgroundColor: '#1a1a2e', zIndex: 1300}}>
-            <Toolbar>
+            <Toolbar sx={{display: 'flex', justifyContent: 'space-between', gap: 2}}>
                 {/* Logo */}
                 <Box>
                     <LocalShippingIcon />
