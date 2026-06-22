@@ -27,7 +27,7 @@ function AppBar(){
     }
 
     return (
-        <MuiAppBar>
+        <MuiAppBar position="fixed" sx={{backgroundColor: '#1a1a2e', zIndex: 1300}}>
             <Toolbar>
                 {/* Logo */}
                 <Box>
