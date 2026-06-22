@@ -59,3 +59,5 @@ function AppBar(){
         </MuiAppBar>
     )
 }
+
+export default AppBar
