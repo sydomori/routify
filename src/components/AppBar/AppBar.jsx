@@ -30,9 +30,11 @@ function AppBar(){
         <MuiAppBar position="fixed" sx={{backgroundColor: '#1a1a2e', zIndex: 1300}}>
             <Toolbar sx={{display: 'flex', justifyContent: 'space-between', gap: 2}}>
                 {/* Logo */}
-                <Box>
-                    <LocalShippingIcon />
-                    <Typography></Typography>
+                <Box sx={{display: 'flex', alignItems: 'center', gap: 1, minWidth: 140}}>
+                    <LocalShippingIcon sx={{color: '#fff'}} />
+                    <Typography variant='h6' sx={{color: '#fff', fontWeight:700, letterSpacing:1}}>
+                        Routeify
+                    </Typography>
                 </Box>
                 {/* Navigation Tabs */}
                 <Tabs>
