@@ -42,9 +42,9 @@ function AppBar(){
                     <Tab label="Analytics" sx={{color: '#aaa',textTransform:'none'}}></Tab>
                 </Tabs>
                 {/* Search Bar */}
-                <Box sx={{display: 'flex', alignItems: 'center', backgroundColor: '#2a2a3e', borderRadius: 2, px: 2, py: 0.5, flexGrow:1, maxWidth: 400}}>
+                <Box sx={{display: 'flex', alignItems: 'center', backgroundColor: '#fff', borderRadius: 5, px: 2, py: 0.5, flexGrow:1, maxWidth: 400}}>
                     <SearchIcon sx={{color: '#aaa', mr: 1}} />
-                    <InputBase placeholder="Search Truck ID or driver" sx={{color: '#fff', width: '100%'}} />
+                    <InputBase placeholder="Search Truck ID or driver" sx={{color: '#000000', width: '100%'}} />
                 </Box>
                 {/* Right Icons */}
                 <Box sx={{display: 'flex', alignItems: 'center', gap: 1}}>
