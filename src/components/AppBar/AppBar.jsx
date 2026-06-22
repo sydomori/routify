@@ -47,15 +47,13 @@ function AppBar(){
                     <InputBase placeholder="Search Truck ID or driver" sx={{color: '#fff', width: '100%'}} />
                 </Box>
                 {/* Right Icons */}
-                <Box>
-                    <IconButton>
+                <Box sx={{display: 'flex', alignItems: 'center', gap: 1}}>
+                    <IconButton sx={{color: '#fff'}}>
                         <FilterListIcon />
                     </IconButton>
-                    <IconButton>
-                        <Avatar>
-                            Syd
-                        </Avatar>
-                    </IconButton>
+                    <Avatar sx={{width: 32, height: 32, bgcolor: '##3f51b5', fontSize:14}}>
+                        Syd
+                    </Avatar>
                 </Box>
             </Toolbar>
         </MuiAppBar>
