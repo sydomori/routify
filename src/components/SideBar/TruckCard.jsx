@@ -8,3 +8,19 @@ const statusColors = {
     offline: {bg: '#F44336', text: '#fff'}, // Red
     // Add more status colors as needed
 }
+
+function TruckCard({truck, isSelected, onClick}){
+    const {bg, color} = statusColors[truck.status]
+
+    return(
+      <Box>
+        <Box>
+            <Typography></Typography>
+            <Typography></Typography>
+        </Box>
+        <Chip/>
+      </Box>
+    )
+}
+
+export default TruckCard
