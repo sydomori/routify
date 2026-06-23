@@ -14,13 +14,13 @@ function FleetList({trucks, selectedTruckId, setSelectedTruckId}){
     )
     
     return(
-        <Box>
+        <Box sx={{p:2, borderBottom:'1px solid #e0e0e0'}}>
             {/* Header */}
-            <Box>
-                <Typography>
+            <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems:'center, mb:2'}}>
+                <Typography variant="subtitle1" fontWeight={700}>
                     Fleet List
                 </Typography>
-                <Typography>
+                <Typography variant="caption" sx={{color: '#888'}}>
                     {trucks.length} trucks
                 </Typography>
             </Box>
