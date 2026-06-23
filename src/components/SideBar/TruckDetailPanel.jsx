@@ -36,18 +36,18 @@ function TruckDetailPanel({selectedTruck}){
                 {
                     selectedTruck.currentTrip ? (
                         <>
-                          <Divider />
-                          <Typography>Current Trip</Typography>
+                          <Divider sx={{mb: 1.5}} />
+                          <Typography variant="caption" sx={{color: '#888', display:'block', mb: 0.5}}>Current Trip</Typography>
                           <Typography>{selectedTruck.currentTrip.origin} - {selectedTruck.currentTrip.destination}</Typography>
-                          <Box>
-                            <Typography>{selectedTruck.currentTrip.distanceKm} km</Typography>
-                            <Typography>{selectedTruck.currentTrip.estimatedHrs} hours</Typography>
+                          <Box sx={{display:'flex', justifyContent: 'space-between', mt: 0.5}}>
+                            <Typography variant='caption'>{selectedTruck.currentTrip.distanceKm} km</Typography>
+                            <Typography variant='caption'>{selectedTruck.currentTrip.estimatedHrs} hours</Typography>
                           </Box>
                         </>
                     ) : (
                         <>
-                          <Divider />
-                          <Typography>No current trip</Typography>
+                          <Divider sx={{mb: 1.5}} />
+                          <Typography variant="caption" sx={{color: '#aaa'}}>No current trip</Typography>
                         </>
                     )
                 }
