@@ -1,16 +1,17 @@
 import Toolbar from '@mui/material/Toolbar'
 import SideBar from '../components/SideBar/SideBar'
-function Dashbord({trucks, selectedTruckId, setSelectedTruckId, modalOpen, setModalOpen}){
+import Box from '@mui/material/Box'
+function Dashboard({trucks, selectedTruckId, setSelectedTruckId, modalOpen, setModalOpen}){
     return(
-        <>
+        <Box sx={{display: 'flex', flexDirection: 'column', overflow: 'hidden', height:'100vh'}}>
             <Toolbar />
-            <div style={{display: 'flex', height: 'calc(100vh - 64px)'}}>
+            <Box style={{display: 'flex',flex:1, overflow: 'hidden'}}>
                 <SideBar trucks={trucks} selectedTruckId={selectedTruckId} setSelectedTruckId={setSelectedTruckId} />
                 {/* MapPanel goes here */}
                 {/* AddTruckModal goes here */}
-            </div>
-        </>
+            </Box>
+        </Box>
     )
 }
 
-export default Dashbord
+export default Dashboard

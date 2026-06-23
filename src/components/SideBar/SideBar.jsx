@@ -6,7 +6,7 @@ import TruckDetailPanel from './TruckDetailPanel';
 function Sidebar ({trucks, selectedTruckId, setSelectedTruckId}){
     const selectedTruck = trucks.find(truck => truck.id === selectedTruckId);
     return(
-        <Box sx={{width:300, minWidth: 280, height:'100%', display:'flex', flexDirection:'column', gap:1, backgroundColor: '#fff', overflow: 'auto'}}>
+        <Box sx={{width:300, minWidth: 280, height:'100%', display:'flex', flexDirection:'column', gap:1, backgroundColor: '#fff', overflowY: 'auto'}}>
             <FleetList trucks={trucks} selectedTruckId={selectedTruckId} setSelectedTruckId={setSelectedTruckId} />
             <TruckDetailPanel selectedTruck={selectedTruck} />
         </Box>
