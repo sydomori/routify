@@ -15,7 +15,7 @@ function TruckCard({truck, isSelected, onClick}){
     return(
       <Box 
         onClick = {onClick} 
-        sx={{p: 1.5, borderradius:2, cursor: 'pointer', backgroundColor: isSelected ? #e8eaf6 : #fafafa,
+        sx={{p: 1.5, borderradius:2, cursor: 'pointer', backgroundColor: isSelected ? '#e8eaf6' : '#fafafa',
         display:'flex',
         justifyContent:'space-between',
         alignItems:'center',
