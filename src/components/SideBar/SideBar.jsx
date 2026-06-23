@@ -12,3 +12,5 @@ function Sidebar ({trucks, selectedTruckId, setSelectedTruckId}){
         </Box>
     )
 }
+
+export default Sidebar
