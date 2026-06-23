@@ -18,17 +18,17 @@ function TruckDetailPanel({selectedTruck}){
                 <Typography variant="body1" fontweight={700}>{selectedTruck.id}</Typography>
                 <Typography variant="caption" sx={{color: '#888'}}>{selectedTruck.driver}</Typography>
 
-                <Divider />
+                <Divider sx={{my:1.5}} />
 
                 {/* speed + last updated */}
-                <Box>
-                    <Box>
-                        <SpeedIcon />
-                        <Typography>{selectedTruck.speed} km/h</Typography>
+                <Box sx={{display:'flex', flexDirection:'column', gap:0.5, mb: 1.5}}>
+                    <Box sx={{display:'flex', alignItems:'center', gap: 1}}>
+                        <SpeedIcon sx={{fontSize: 16, color: '#888'}} />
+                        <Typography variant="body2">{selectedTruck.speed} km/h</Typography>
                     </Box>
-                    <Box>
-                        <AccessTimeIcon />
-                        <Typography>{selectedTruck.lastUpdated}</Typography>
+                    <Box sx={{display:'flex', alignItems:'center', gap: 1}}>
+                        <AccessTimeIcon sx={{fontSize: 16, color: '#888'}} />
+                        <Typography variant="body2">{selectedTruck.lastUpdated}</Typography>
                     </Box>
                 </Box>
 
