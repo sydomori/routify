@@ -26,9 +26,9 @@ function FleetList({trucks, selectedTruckId, setSelectedTruckId}){
             </Box>
 
             {/* Filter Input */}
-            <Box>
-                <SearchIcon />
-                <InputBase />
+            <Box sx={{display:'flex',alignItems:'center', backgroundColor: '#f5f5f5', borderRadius: 2, px:1.5, py:0.5, mb:1.5 }}>
+                <SearchIcon sx={{color: '#aaa', mr:1, fontSize: 18}} />
+                <InputBase placeholder="Filter by truck or driver" value={filter} onChange={e => setFilter(e.target.value)} sx={{width:'100%', fontSize: 14}} autoComplete="on" />
             </Box>
 
             {/* Truck Cards */}
