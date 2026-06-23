@@ -32,7 +32,7 @@ function FleetList({trucks, selectedTruckId, setSelectedTruckId}){
             </Box>
 
             {/* Truck Cards */}
-            <Box>
+            <Box sx={{display:'flex', flexDirection:'column', gap:1}}>
                 {filteredTrucks.map(truck => (
                     <TruckCard 
                      key = {truck.id}
