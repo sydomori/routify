@@ -8,8 +8,8 @@ function TruckDetailPanel({selectedTruck}){
     if(!selectedTruck) return null
 
     return(
-        <Box>
-            <Typography>
+        <Box sx={{p:2}}>
+            <Typography variant="subtitle1" fontweight={700} mb={1}>
                 Selected Truck Details
             </Typography>
 
