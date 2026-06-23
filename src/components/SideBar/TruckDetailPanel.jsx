@@ -8,12 +8,12 @@ function TruckDetailPanel({selectedTruck}){
     if(!selectedTruck) return null
 
     return(
-        <Box sx={{p:2}}>
+        <Box sx={{p:1}}>
             <Typography variant="subtitle1" fontweight={700} mb={1}>
                 Selected Truck Details
             </Typography>
 
-            <Box sx={{p:2, backgroundColor: '#fafafa', borderradius:2, border: '1px solid #e0e0e0'}}>
+            <Box sx={{p:2, backgroundColor: '#fafafa', borderRadius:2, border: '1px solid #e0e0e0'}}>
                 {/* truck id + driver */}
                 <Typography variant="body1" fontweight={700}>{selectedTruck.id}</Typography>
                 <Typography variant="caption" sx={{color: '#888'}}>{selectedTruck.driver}</Typography>
