@@ -12,6 +12,9 @@ import Typography from '@mui/material/Typography'
 import SearchIcon from '@mui/icons-material/Search'
 import FilterListIcon from '@mui/icons-material/FilterList'
 import LocalShippingIcon from '@mui/icons-material/LocalShipping'
+import dashboardLogo from '../../public/dashboardLogo.svg'
+import analyticsLogo from '../../public/analyticsLogo.svg'
+
 
 function AppBar(){
     const navigate = useNavigate()
@@ -27,19 +30,27 @@ function AppBar(){
     }
 
     return (
-        <MuiAppBar position="fixed" sx={{backgroundColor: '#1a1a2e', zIndex: 1300}}>
+        <MuiAppBar position="fixed" sx={{backgroundColor: '#040406', zIndex: 1300}}>
             <Toolbar sx={{display: 'flex', justifyContent: 'space-between', gap: 2}}>
                 {/* Logo */}
                 <Box sx={{display: 'flex', alignItems: 'center', gap: 1, minWidth: 140}}>
-                    <LocalShippingIcon sx={{color: '#fff'}} />
+                    <LocalShippingIcon sx={{color: '#e1e1e1'}} />
                     <Typography variant='h6' sx={{color: '#fff', fontWeight:700, letterSpacing:1}}>
                         Routeify
                     </Typography>
                 </Box>
                 {/* Navigation Tabs */}
                 <Tabs value={currentTab} onChange={handleTabChange} textColor="inherit" slotProps={{indicator: {style: {backgroundColor: '#fff', height: 2}}}}>
-                    <Tab label="Dashboard" sx={{color: '#fff',textTransform:'none'}}></Tab>
-                    <Tab label="Analytics" sx={{color: '#aaa',textTransform:'none'}}></Tab>
+                    <Tab label="Dashboard" sx={{color: '#fff',textTransform:'none'}}
+                     iconPosition='start'
+                     icon={<img src = {dashboardLogo} alt = "Dashboard Logo" style={{width: 20, height: 20, color: '#fff'}} />}>
+                    </Tab>
+                    <Tab label="Analytics" sx={{color: '#aaa',textTransform:'none'}}
+                     iconPosition='start'
+                     icon={<img src = {analyticsLogo} alt = "Analytics Logo" style={{width: 20, height: 20, color: '#fff'}} />}
+                    >
+                        
+                    </Tab>
                 </Tabs>
                 {/* Search Bar */}
                 <Box sx={{display: 'flex', alignItems: 'center', backgroundColor: '#fff', borderRadius: 5, px: 2, py: 0.5, flexGrow:1, maxWidth: 400}}>
