@@ -13,10 +13,10 @@ function TruckDetailPanel({selectedTruck}){
                 Selected Truck Details
             </Typography>
 
-            <Box>
+            <Box sx={{p:2, backgroundColor: #fafafa, borderradius:2, border: '1px solid #e0e0e0'}}>
                 {/* truck id + driver */}
-                <Typography>{selectedTruck.id}</Typography>
-                <Typography>{selectedTruck.driver}</Typography>
+                <Typography variant="body1" fontweight={700}>{selectedTruck.id}</Typography>
+                <Typography variant="caption" sx={{color: '#888'}}>{selectedTruck.driver}</Typography>
 
                 <Divider />
 
