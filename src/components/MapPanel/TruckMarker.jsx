@@ -16,3 +16,16 @@ const defaultIcon = new L.Icon({ /* Leaflet's class for creating custom marker i
     iconAnchor: [10,32], /* anchor point of the icon in pixels, relative to the top left corner of the icon image */
     popupAnchor: [0,-32] /* anchor point of the popup in pixels, relative to the top left corner of the icon image */
 })
+
+function TruckMarker ({truck, isSelected}) {
+    return (
+      <Marker position={[truck.lat, truck.lng]} icon={isSelected ? selectedIcon : defaultIcon}>
+        <Popup>
+            <strong>{truck.id}</strong><br />
+            {truck.driver}<br />
+            Status: {truck.status} <br />
+            Speed: {truck.speed} km/h
+        </Popup>
+      </Marker>
+    )
+}
