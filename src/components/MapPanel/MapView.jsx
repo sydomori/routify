@@ -38,3 +38,5 @@ function MapView ({trucks, selectedTruckId}){
         </MapContainer>
     )
 }
+
+export default MapView

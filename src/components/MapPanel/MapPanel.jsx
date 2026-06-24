@@ -9,3 +9,5 @@ function MapPanel({trucks, selectedTruckId}){
         </Box>
     )
 }
+
+export default MapPanel

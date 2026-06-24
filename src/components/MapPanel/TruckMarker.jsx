@@ -29,3 +29,5 @@ function TruckMarker ({truck, isSelected}) {
       </Marker>
     )
 }
+
+export default TruckMarker
